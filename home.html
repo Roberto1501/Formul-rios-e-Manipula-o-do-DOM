@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+    <div id="container-1">
+    <form action="menu"></form>
+    <hr>
+        <label for="menu">Dados pessoais</label><br><br>
+        <label for="menu">Nome:</label>
+        <input type="text" required id="nome"> <br><br>
+        <label for="menu" >Endereço:</label>
+        <input type="text" id="endereco" required><br><br>
+        <label for="menu">Cidade:</label>
+        <input type="text" id="cidade" required><br><br>
+        <label for="menu">Estado:</label>
+
+        <select  value="default" id="estado">
+            <option value="Selecione" >--Selecione--</option>
+            <option value="Ceará">Ceará</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+        </select>
+        </form>
+    </div>
+
+    <br><br>
+
+
+
+    <form action="menu">
+        <label for="menu">Dados profissionais</label><br><br> <hr>
+        <label for="menu">Natureza do cargo</label><br><br>
+        <input type="radio" name="" id="" checked>
+        <label for="menu">Gerência</label>
+        <input type="radio" name="" id="" >
+        <label for="menu">Financeiro</label>
+        <input type="radio" name="" id="" >
+        <label for="menu">Recepção</label>
+        <input type="radio" name="" id="" >
+        <label for="menu">Administrativo</label>
+        <input type="radio" name="" id="" >
+        <label for="menu">Juridico</label>
+        <br><br>
+        
+        <label for="menu">Area de interesse</label><br><br>
+        <input type="checkbox" name="" id="">
+        <label for="menu">Computação</label>
+        <input type="checkbox" name="" id="" >
+        <label for="menu">Biologia</label>
+        <input type="checkbox" name="" id="" >
+        <label for="menu">Meio Ambiente</label>
+        <input type="checkbox" name="" id="" >
+        <label for="menu">Engenharia</label>
+        <input type="checkbox" name="" id="" >
+        <label for="menu">História</label>
+        <br><br>
+        <div id="div-final">
+         <label for="menu" id="text">Mini Curriculo:</label>
+         <input type="text" id="curriculo">
+        </div>
+        <hr>
+        
+        
+    </form>
+
+    <div id="btn">
+        <button type="button" onclick="armazenar()">enviar</button>
+        <button type="cancelar">cancelar</button>
+
+    </div>
+    
+    
+
+
+    <script src="scrypt.js"></script>
+</body>
+
+</html>
